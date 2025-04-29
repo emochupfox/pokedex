@@ -277,3 +277,42 @@ header, .box-header {
 .pixel-btn:hover {
   transform: scale(1.1);
 }
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0d1227;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0;
+  z-index: 100;
+  border-top: 2px solid #1a1a2f;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.pixel-btn {
+  width: 40px;
+  height: 40px;
+  image-rendering: pixelated;
+  cursor: pointer;
+}
+
+.footer-credit {
+  font-size: 12px;
+  color: #aaa;
+  opacity: 0.8;
+}
+
+.footer-credit .name {
+  color: #4dabf7;
+  font-weight: bold;
+}
