@@ -316,3 +316,55 @@ header, .box-header {
   color: #4dabf7;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .pokedex-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    height: auto;
+  }
+
+  .party-list,
+  .box-view,
+  .preview-panel {
+    width: 100%;
+  }
+
+  .pokemon-grid {
+    grid-template-columns: repeat(4, 1fr); /* fewer columns */
+    gap: 8px;
+  }
+
+  .poke-slot {
+    height: 50px;
+  }
+
+  .pixel-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .controls {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .footer-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer-credit {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #search-input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
