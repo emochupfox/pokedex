@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokédex Game View</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Pokedex</h1>
+    <input type="text" id="search-input" placeholder="Search Pokémon..." />
+  </header>
+
+  <div class="pokedex-layout">
+
+    <!-- PARTY -->
+    <aside class="party-list" id="party-list">
+      <h2>Party</h2>
+    </aside>
+
+    <!-- BOX -->
+    <main class="box-view">
+      <div class="box-header">
+        <h2 id="box-label">Box 1</h2>
+        <div class="box-nav">
+          <button id="prev-box">⟨</button>
+          <button id="next-box">⟩</button>
+        </div>
+      </div>
+      <div class="pokemon-grid" id="pokemon-grid"></div>
+    </main>
+
+    <!-- PREVIEW -->
+    <section class="preview-panel" id="preview">
+      <div class="preview-art">
+        <img id="preview-img" src="" alt="">
+      </div>
+      <h3 id="preview-name">Select a Pokémon</h3>
+      <p id="preview-level">Lv. ???</p>
+      <div id="type-badges"></div>
+      <div id="preview-stats" class="stats"></div>
+      <div id="evolution-info"></div>
+      <audio id="cry-audio"></audio>      
+    </section>
+
+  </div>
+
+  <footer class="controls">
+    <img src="assets/buttons/dpad.png" alt="Confirm" class="pixel-btn" onclick="handleConfirm()" />
+    <img src="assets/buttons/l1.png" alt="View Stats" class="pixel-btn" onclick="toggleStatsView()" />
+    <img src="assets/buttons/r3.png" alt="Change Mode" class="pixel-btn" onclick="toggleView()" />
+    <img src="assets/buttons/square.png" alt="Back" class="pixel-btn" onclick="handleBack()" />
+  </footer>
+ 
+  <script src="script.js"></script>
+  
+</body>
+</html>
